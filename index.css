@@ -1,0 +1,106 @@
+body, h1, h2, ul, li, p, form, table {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(assets/Font/Roboto-Regular.ttf);
+}
+
+body {
+    font-family:'MyFont';
+    background-color: #e2dfdf;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: transparent;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    border-radius: 35px;
+    background-color: rgb(0, 135, 219);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+li a:hover {
+    background-color: rgb(4, 95, 151) ;
+}
+
+.tab {
+    display: none;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc7e;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+    display: block;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+input[type="submit"] {
+    background-color: rgb(0, 135, 219);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'MyFont';
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(4, 95, 151) ;
+}
+
+table {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#resume {
+    margin-top: 20px;
+    font-weight: bold;
+}
