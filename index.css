@@ -29,11 +29,14 @@ li a {
     border-radius: 35px;
     background-color: rgb(0, 135, 219);
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 18px 20px;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: -3px -3px 3px rgb(4, 95, 151);
 }
 
 li a:hover {
