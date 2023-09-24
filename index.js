@@ -17,18 +17,26 @@ registrationForm.addEventListener("submit", async function (e) {
     const nama = e.target.nama.value;
     const umur = parseInt(e.target.umur.value);
     const uangSangu = parseInt(e.target.uangSangu.value);
-
-    if (nama.length < 10 || umur < 25 || uangSangu < 100000 || uangSangu > 1000000) {
-        alert("Mohon isi form dengan benar.");
+    
+    if (nama.length < 10) {
+        alert("Nama harus terdiri dari minimal 10 karakter.");
         return;
     }
-
+    
+    if (umur < 25) {
+        alert("Umur harus lebih dari atau sama dengan 25 tahun.");
+        return;
+    }
+    
+    if (uangSangu < 100000 || uangSangu > 1000000) {
+        alert("Jumlah uang saku harus antara 100,000 hingga 1,000,000.");
+        return;
+    }
+    
     const pendaftar = new Pendaftar(nama, umur, uangSangu);
     pendaftarList.push(pendaftar);
-
     e.target.reset();
-
-    await updatePendaftarList();
+    updatePendaftarList();
     updateResume();
 });
 
